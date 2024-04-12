@@ -1,0 +1,15 @@
+gspread_oauth_creds: /path/to/my/gspread/oauth/credentials.json
+gspread_oauth_authorized: /path/to/my/gspread/oauth/authorized_credentials.json
+gspread_url: https://docs.google.com/spreadsheets/myfile
+gspread_wksht: MyWorkSheetName
+git_log_outfile: /path/to/my/git-log/output.txt
+client_name: Client Business Name
+client_address: 123 Business Place, NYC, NY 99999
+client_email: buiness@gmail.com
+provider_name: My LLC
+provider_address: 123 My Address St, NYC, NY 99999
+provider_phone: 111 111 1111
+provider_email: mybusiness@gmail.com
+invoice_template: /path/to/invoice.docx
+invoice_out: /path/to/my/output/invoice.docx
+invoice_num: INV-001
