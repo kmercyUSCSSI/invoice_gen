@@ -97,12 +97,14 @@ class Invoice:
             self.invoice_out = invoice_out
 
         if total != None:
+            total = self.format_total_due(total)
             self.total = total
 
         if notes != None:
             self.notes = notes
 
         if services != None:
+            services = self.format_services(services)
             self.services = services
 
     # Member Function: print_atts
@@ -201,6 +203,26 @@ class Invoice:
     # Parameters: client email
     def set_client_email(self, email):
         self.client_email = email
+
+    # Member Function: format_services
+    # Purpose: format $ amounts in services
+    def format_services(self, services):
+        for service in services:
+            rate_number = float(service["Rate"])
+            rate_currency_string = "${:,.2f}".format(rate_number)
+            service["Rate"] = rate_currency_string
+
+            sub_total_number = float(service["SubTotal"])
+            sub_total_currency_string = "${:,.2f}".format(sub_total_number)
+            service["SubTotal"] = sub_total_currency_string
+        return services
+
+    # Member Function: format_total_due
+    # Purpose: format $ amounts in total_due
+    def format_total_due(self, total):
+        total_number = float(total)
+        total_currency_string = "${:,.2f}".format(total_number)
+        return total_currency_string
 
     # Member Function: fill_template
     # Purpose: Using populated class, fill in the Invoice template and export
