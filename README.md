@@ -11,7 +11,7 @@ automate invoices for their clients. Or without git-log notes, for general consu
 ## Pre-requisites:
 
 - Goolge Sheets Worksheet, including list of services, hours, rates, and subtotals.
-Follow general row schema (include header followed by rows of data) e.g.:
+Follow general row schema (include header followed by rows of data) e.g.
 - ["Service", "Hours", "Rate", "SubTotal"]
 - ["Software Services", "10", "20", "200"]
 - Project requires a google sheet name, and its url
