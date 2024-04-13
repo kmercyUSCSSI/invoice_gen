@@ -79,7 +79,7 @@ Required outfile path of .docx -> Place in location of your liking
 Required Invoice Number -> Any String will do
 
 Required input of word .docx template file (exmple included in /docs/invoice.docx) with
-mailmerge fields. Program will use your config, GoogleSheet values, git-log values
+mailmerge fields. Program will use your config, GoogleSheet values, and git-log values
 to "merge" with template fields in template .docx
 
 git-log outfile and client address, phone, and email are optional
