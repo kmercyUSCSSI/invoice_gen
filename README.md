@@ -16,7 +16,7 @@ Follow general row schema (include header followed by rows of data) e.g.
 - ["Software Services", "10", "20", "200"]
 - Project requires a google sheet name, and its url
 - Setup access to Google Sheets API, Google Drive API and receive credentials
-for OAuth for your account (See here:https://docs.gspread.org/en/v6.0.0/oauth2.html and
+for OAuth for your account (See here: https://docs.gspread.org/en/v6.0.0/oauth2.html and
 follow instructions for "For End Users: Using OAuth Client ID").
 - Project requires a json document of your credentials from Google Developer and a json
 file to store authorized user credentials: e.g. you and your access token.
