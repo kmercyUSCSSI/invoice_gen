@@ -8,7 +8,7 @@ a .yaml file specifying the configurations of the matching attributes in Microso
 This project is useful for general software engineers looking for a quick way to
 automate invoices for their clients. Or without git-log notes, for general consultants.
 
-## Pre-requisites:
+## Pre-Requisites:
 
 - Goolge Sheets Worksheet, including list of services, hours, rates, and subtotals.
 Follow general row schema (include header followed by rows of data) e.g.
@@ -51,7 +51,7 @@ Run the program:
 python main.py yaml_config.yaml
 ```
 
-### Note: edit yaml_config.yaml to match your parameters
+### Notes: edit yaml_config.yaml to match your parameters
 
 Schema Below:
 - REQUIRED gspread_oauth_creds: /path/to/my/gspread/oauth/credentials.json
